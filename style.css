@@ -1,0 +1,29 @@
+*{margin:0px;padding:0px;}
+body{
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+li{
+  list-style: none;
+}
+.selector:after{
+  clear:both; 
+  content:"";
+  display:block;
+}
+.selected{
+  background: #428bca;
+  color: white;
+}
+.item-collection{
+  background: white;
+  border:2px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin:0px 10px 10px 0;
+  width: 200px;
+  height: 200px;
+  float: left;
+  overflow: auto;
+}

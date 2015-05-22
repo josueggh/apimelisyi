@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <meta charset="UTF-8">
+    <title>AngularJS Example</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+  </head>
+  <body ng-controller="Items as item">
+
+    <div ng-repeat="category in item.categories">
+      <h3>{{category}}</h3>
+      <selection-component start='category'></selection-component>
+    </div>
+
+    
+  
+
+    <script type="text/javascript" src="js/angular.min.js"></script>
+     <script type="text/javascript" src="js/angular-resource.min.js"></script>
+
+    <script type="text/javascript" src="js/components.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+  </body>
+</html>
